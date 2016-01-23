@@ -50,33 +50,48 @@
 
 
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+<form>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
+    <fieldset id="usuario">
+        <legend>Identificação do Usuário</legend>
+        <p>Nome: <input type="text" name="tNone" id="cNonme" size="20" maxlength="30" placeholder="Nome Compelto"/></p>
+        <p>Senha:<input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 Digitos"/></p>
+       <p> E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="Digite seu mail"/></p>
+        <fieldset id="sexo"><legend>Sexo:</legend>
+       <input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label><br/>
+       <input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</label>
+        </fieldset>
+       <p> Data de Nascimento:<input type="date" name="tNasc" id="cNasc"/></p>
+    </fieldset>
+
+
+<fieldset id="endereco">
+    <legend>Endereço do Usuário</legend>
+    <p>Logradouro: <input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua"/></p>
+    <p>Número:<input type="number" name="tNum" id="cNum"  min="0" max="9999"></p>
     Estado:
     Cidade:
+</fieldset>
 
-Mensagem do Usuário
+<fieldset id="mensagem">
+    <legend >Mensagem do Usuário</legend>
     Grau de Urgência:
     Mensagem:
+</fieldset>
 
-Quero um Google Glass
+
+
+<fieldset id="pedido">
+   <legend > Quero um Google Glass</legend>
     Gostaria de adquirir um Google Glass quando disponível
     Cor:
     Quantidade:
     Preço Total: R$
-
+</fieldset>
 
 [BOTÃO ENVIAR]
+
+</form>
 
     <footer id="rodape">
         <p>Copyright &copy;2015 - by Erik Pedro<br/>
